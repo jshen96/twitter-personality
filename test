@@ -1,0 +1,30 @@
+(3) [Array(12), Array(5), Array(5)]
+0: Array(12)
+    0: {trait_id: "need_challenge", name: "Challenge", category: "needs", percentile: 0.8274306470141732}
+    1: {trait_id: "need_closeness", name: "Closeness", category: "needs", percentile: 0.7124950748967368}
+    2: {trait_id: "need_curiosity", name: "Curiosity", category: "needs", percentile: 0.7448070773192567}
+    3: {trait_id: "need_excitement", name: "Excitement", category: "needs", percentile: 0.8245961040547047}
+    4: {trait_id: "need_harmony", name: "Harmony", category: "needs", percentile: 0.6929971538448089}
+    5: {trait_id: "need_ideal", name: "Ideal", category: "needs", percentile: 0.9363495746232201}
+    6: {trait_id: "need_liberty", name: "Liberty", category: "needs", percentile: 0.7794787960870635}
+    7: {trait_id: "need_love", name: "Love", category: "needs", percentile: 0.7852687201312041}
+    8: {trait_id: "need_practicality", name: "Practicality", category: "needs", percentile: 0.5911510611666759}
+    9: {trait_id: "need_self_expression", name: "Self-expression", category: "needs", percentile: 0.5770323976715195}
+    10: {trait_id: "need_stability", name: "Stability", category: "needs", percentile: 0.6872796351960107}
+    11: {trait_id: "need_structure", name: "Structure", category: "needs", percentile: 0.3296479980102437}
+    length: 12
+    __proto__: Array(0)
+1: Array(5)
+    0: {trait_id: "big5_openness", name: "Openness", category: "personality", percentile: 0.0764096646573042, children: Array(6)}
+    1: {trait_id: "big5_conscientiousness", name: "Conscientiousness", category: "personality", percentile: 0.20096657258203737, children: Array(6)}
+    2: {trait_id: "big5_extraversion", name: "Extraversion", category: "personality", percentile: 0.23449134723918985, children: Array(6)}
+    3: {trait_id: "big5_agreeableness", name: "Agreeableness", category: "personality", percentile: 0.5568923469860732, children: Array(6)}
+    4: {trait_id: "big5_neuroticism", name: "Emotional range", category: "personality", percentile: 0.0943451955860814, children: Array(6)}
+    length: 5
+    __proto__: Array(0)
+2: Array(5)
+    0: {trait_id: "value_conservation", name: "Conservation", category: "values", percentile: 0.6333591732669711}
+    1: {trait_id: "value_openness_to_change", name: "Openness to change", category: "values", percentile: 0.7679810728040554}
+    2: {trait_id: "value_hedonism", name: "Hedonism", category: "values", percentile: 0.696725144746213}
+    3: {trait_id: "value_self_enhancement", name: "Self-enhancement", category: "values", percentile: 0.8511594917290173}
+    4: {trait_id: "value_self_transcendence", name: "Self-transcendence", category: "values", percentile: 0.7429894544150216}

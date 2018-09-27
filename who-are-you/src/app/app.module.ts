@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import {PersonalityService} from './personality.service'
 import {HttpClientModule} from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
+import { ChartComponent } from './chart/chart.component';
 // import * as Watson from "";
 
 
@@ -24,7 +25,8 @@ const routes : Routes = [
   declarations: [
     AppComponent,
     ListComponent,
-    UsernameComponent
+    UsernameComponent,
+    ChartComponent
 
 
   ],

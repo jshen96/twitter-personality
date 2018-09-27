@@ -19,18 +19,6 @@
     </div>
   </div>
 </header>
-
-<!-- <form class="form-inline" style="text-align:center">
-  <div class="form-group">
-    <label for="username">Twitter Username:</label>
-    <input #nameInput type="name" class="form-control" id="username">
-  </div>
-
-  <button type="submit" class="btn btn-default"
-          (click) = "saveUsername(nameInput)"
-  >Submit</button><br>
-</form> -->
-
 <br>
 
 
@@ -42,35 +30,31 @@
     <div *ngFor = "let object of panels" class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" href="#{{object.name}}">{{object.name}}</a>
+          <a data-toggle="collapse" href="#{{object[0].category}}">{{object[0].category}}</a>
         </h4>
       </div>
-      <div id="{{object.name}}" class="panel-collapse collapse">
+      <div id="{{object[0].category}}" class="panel-collapse collapse">
         <div class="panel-body">
           <div >
-          <ul>
-            <li *ngFor = "let v of object"> <strong>{{v.name}}</strong>  Percentile : <strong>{{(100*v.percentile)| number:0}}%</strong></li>
-          </ul>
+            <table class = "table table-sm table-hover table-striped table-bordered">
+              <thead class = "thead-dark">
+                <tr>
+                  <th scope="col">Trait</th>
+                  <th scope="col">Percentile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor = "let v of object">
+                  <th scope="row">{{v.name}}</th>
+                  <td>{{(100*v.percentile)| number:0}}%</td>
+                </tr>
+              </tbody>
+          </table>
           </div>
         </div>
 
-        <div class="panel-footer">
-
-
-
-<!-- _--------------------------------------------------- -->
-          <div style="width: 50%;">
-            <canvas
-                baseChart
-                [chartType]="'horizontalBar'"
-                [data]="chartData"
-                [labels]="chartLabels"
-                [options]="chartOptions"
-                [legend]="false"
-                (chartClick)="onChartClick($event)">
-            </canvas>
-          </div>
-
+        <div class="panel-footer" *ngIf="chartDataObj[object[0].category] !== undefined && chartLabelsObj[object[0].category] !== undefined">
+          <app-chart [chartData]="chartDataObj[object[0].category]" [chartLabels] = "chartLabelsObj[object[0].category]"></app-chart>
         </div>
       </div>
     </div>
