@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PersonalityService } from '../personality.service';
 
 
@@ -9,7 +9,7 @@ import { PersonalityService } from '../personality.service';
 })
 
 export class ListComponent implements OnInit {
-  screen_name : string;
+  @Input() screen_name : string;
   jsondata : any;
   words : number;
   panels : any;

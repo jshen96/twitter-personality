@@ -8,8 +8,7 @@ console.log("twitter app is starting");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express',
-                        tweets : tweetstext
+  res.render('index', { title: 'Express'
                       });
 });
 

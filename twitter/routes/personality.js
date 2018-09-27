@@ -19,10 +19,10 @@ var personalityInsights = new PersonalityInsightsV3({
 });
 
 
-var getUserPersonality = function(screen_name,res){
+var getUserPersonality = function(nama,res){
   var tweetstext = "";
   var promise1 = new Promise(function(resolve, reject) {
-    T.get('statuses/user_timeline', { screen_name: 'katarinalaw', count: 1000 },
+    T.get('statuses/user_timeline', { screen_name: "jshen96", count: 1000 },
     function(err, data, response) {
       var arr = data;
       for(var i = 0; i<arr.length;i++){
@@ -47,14 +47,6 @@ var getUserPersonality = function(screen_name,res){
           console.log('error:', err);
         } else {
           ibmJSON = response;
-          //responseFromIBM = response.personality;
-          // responseFromIBM.forEach( object =>{
-          //   console.log(object.trait_id);
-          //   object.children.forEach( element => {
-          //         console.log("-------"+element.name +" percentile : "+ element.percentile);
-          //   });
-          //   console.log(" ");
-          // });
           res.send(response);
           return response;
         }
@@ -64,7 +56,8 @@ var getUserPersonality = function(screen_name,res){
 }
 
 router.get('/', function(req, res, next) {
-  getUserPersonality("jshen96",res);
+  let s_name = req.query.screen_name;
+  getUserPersonality(s_name,res);
 });
 
 module.exports = router;
