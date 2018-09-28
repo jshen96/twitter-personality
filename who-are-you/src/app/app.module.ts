@@ -11,10 +11,6 @@ import {PersonalityService} from './personality.service'
 import {HttpClientModule} from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
 import { ChartComponent } from './chart/chart.component';
-// import * as Watson from "";
-
-
-// var PersonalityInsightsV3 = require('watson-developer-cloud/personality-insights/v3'
 
 const routes : Routes = [
   { path : 'list',

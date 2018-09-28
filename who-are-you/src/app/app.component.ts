@@ -10,5 +10,5 @@ import { ListComponent } from './list/list.component';
 
 export class AppComponent {
   // init personality response to null;
-  title = 'who-are-you';
+  title = 'Twitter-Personality';
 }

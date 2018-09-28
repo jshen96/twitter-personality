@@ -1,6 +1,31 @@
-<p>
-  chart works!
-</p>
+<div class = "jumbotron container">
+<h2 class="text-center">Charts</h2>
+
+<div style="width: 50%;">
+  <canvas
+      baseChart
+      [chartType]="'pie'"
+      [data]="chartData"
+      [labels]="chartLabels"
+      [options]="chartOptions"
+      [legend]="false"
+      (chartClick)="onChartClick($event)">
+  </canvas>
+</div>
+<br>
+
+<div style="width: 50%;">
+  <canvas
+      baseChart
+      [chartType]="'radar'"
+      [data]="chartData"
+      [labels]="chartLabels"
+      [options]="chartOptions"
+      [legend]="false"
+      (chartClick)="onChartClick($event)">
+  </canvas>
+</div>
+<br>
 
 <div style="width: 50%;">
   <canvas
@@ -12,4 +37,6 @@
       [legend]="false"
       (chartClick)="onChartClick($event)">
   </canvas>
+</div>
+<br>
 </div>
