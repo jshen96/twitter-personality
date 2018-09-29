@@ -1,33 +1,29 @@
-<div class = "jumbotron container">
 <h2 class="text-center">Charts</h2>
 
-<div style="width: 50%;">
-  <canvas
-      baseChart
-      [chartType]="'pie'"
-      [data]="chartData"
-      [labels]="chartLabels"
-      [options]="chartOptions"
-      [legend]="false"
-      (chartClick)="onChartClick($event)">
-  </canvas>
-</div>
-<br>
+  <div class = "smallchart" style="width: 50%;">
+    <canvas
+        baseChart
+        [chartType]="'pie'"
+        [data]="chartData"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [legend]="false"
+        (chartClick)="onChartClick($event)">
+    </canvas>
+  </div>
+  <div class = "smallchart" style="width: 50%;">
+    <canvas
+        baseChart
+        [chartType]="'radar'"
+        [data]="chartData"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [legend]="false"
+        (chartClick)="onChartClick($event)">
+    </canvas>
+  </div>
 
-<div style="width: 50%;">
-  <canvas
-      baseChart
-      [chartType]="'radar'"
-      [data]="chartData"
-      [labels]="chartLabels"
-      [options]="chartOptions"
-      [legend]="false"
-      (chartClick)="onChartClick($event)">
-  </canvas>
-</div>
-<br>
-
-<div style="width: 50%;">
+<div class = "largechart" style="width: 70%;">
   <canvas
       baseChart
       [chartType]="'horizontalBar'"
@@ -39,4 +35,3 @@
   </canvas>
 </div>
 <br>
-</div>
