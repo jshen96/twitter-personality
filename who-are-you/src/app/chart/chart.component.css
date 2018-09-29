@@ -7,3 +7,11 @@
     width: 50%;
     padding: 10px;
 }
+
+.charts-box{
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  border-radius: 25px;
+  background-color: white;
+}

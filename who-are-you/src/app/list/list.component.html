@@ -1,5 +1,5 @@
 
-<div class="jumbotron">
+<div class="container">
     <form>
       <div class="form-row">
         <div class="col-12 col-md-9 mb-2 mb-md-0">
@@ -14,10 +14,14 @@
     </form>
 </div>
 
-<div *ngIf = "screen_name" class="jumbotron container">
-  <p>{{words}} were analyzed in order to predict your personality</p>
-  <p>Click on a Category to learn more about it.</p>
+<div *ngIf = "screen_name" class=" container">
   <div  *ngIf = "panels" class="panel-group">
+    <div class = "details">
+      <blockquote>
+      <p>{{words}} words were analyzed in order to predict your personality</p>
+      <p>Click on a Category to learn more about it.</p>
+    </blockquote>
+    </div>
     <div *ngFor = "let object of panels" class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title text-capitalize">
@@ -26,7 +30,7 @@
       </div>
       <div id="{{object[0].category}}" class="panel-collapse collapse">
         <div class="panel-body">
-          <div >
+          <div class = "trait-table">
             <table class = "table table-sm table-dark table-striped table-bordered">
               <thead class = "thead-dark">
                 <tr>

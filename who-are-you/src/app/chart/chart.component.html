@@ -1,37 +1,38 @@
-<h2 class="text-center">Charts</h2>
+<h3 class="display-4 text-center">Charts</h3>
 
-  <div class = "smallchart" style="width: 50%;">
-    <canvas
-        baseChart
-        [chartType]="'pie'"
-        [data]="chartData"
-        [labels]="chartLabels"
-        [options]="chartOptions"
-        [legend]="false"
-        (chartClick)="onChartClick($event)">
-    </canvas>
-  </div>
-  <div class = "smallchart" style="width: 50%;">
-    <canvas
-        baseChart
-        [chartType]="'radar'"
-        [data]="chartData"
-        [labels]="chartLabels"
-        [options]="chartOptions"
-        [legend]="false"
-        (chartClick)="onChartClick($event)">
-    </canvas>
-  </div>
-
-<div class = "largechart" style="width: 70%;">
-  <canvas
-      baseChart
-      [chartType]="'horizontalBar'"
-      [data]="chartData"
-      [labels]="chartLabels"
-      [options]="chartOptions"
-      [legend]="false"
-      (chartClick)="onChartClick($event)">
-  </canvas>
+<div  class = "charts-box container">
+    <div class = "largechart" style="width: 70%;">
+      <canvas
+          baseChart
+          [chartType]="'horizontalBar'"
+          [data]="chartData"
+          [labels]="chartLabels"
+          [options]="chartOptions"
+          [legend]="false"
+          (chartClick)="onChartClick($event)">
+      </canvas>
+    </div>
+    <br>
+      <div class = "smallchart" style="width: 50%;">
+        <canvas
+            baseChart
+            [chartType]="'pie'"
+            [data]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="false"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+      </div>
+      <div class = "smallchart" style="width: 50%;">
+        <canvas
+            baseChart
+            [chartType]="'radar'"
+            [data]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="false"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+      </div>
 </div>
-<br>

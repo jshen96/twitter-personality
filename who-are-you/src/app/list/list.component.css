@@ -1,0 +1,18 @@
+.details{
+  margin: 20px;
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+}
+
+.panel-body{
+  background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+  background: rgba(204, 204, 204, 0.5);
+}
+
+.trait-table{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border-radius: 25px;
+  background-color: white;
+}
