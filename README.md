@@ -17,7 +17,7 @@ run <code>ng serve --open</code> in who-are-you directory
 
 ### Demo
 type in an existing twitter screen name : <br>
-<img src = "twitter-personality/Capture.PNG">
+<img src = "Capture.PNG">
 
 ## Built With
 
