@@ -1,27 +1,19 @@
+
+
+
 # Twitter-Personality
 
 Single Page Application that predicts a user’s personality based on his/her twitter feed using a Machine Learning Model.
 
-## Getting Started
-
-run <code>npm start</code> in twitter directory
-run <code>ng serve --open</code> in who-are-you directory
 
 ### Prerequisites
 
-
+You will need Node.js, NPM, and angular installed
 
 ### Installing
 
-
-## Running the tests
-
-
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+run <code>npm start</code> in twitter directory
+run <code>ng serve --open</code> in who-are-you directory
 
 ## Built With
 
