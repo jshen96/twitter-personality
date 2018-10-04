@@ -27,7 +27,8 @@ run <code>npm start</code> in twitter directory
 run <code>ng serve --open</code> in who-are-you directory
 
 ### Demo
-type in an existing twitter screen name and see your personality visualized right in front of you! <br>
+Type in an existing twitter screen name and see your personality visualized right in front of you! <br>
+Click on the tab to learn more about that category <br>
 <img src = "Capture.PNG">
 <img src = "screenshot.png">
 
