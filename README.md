@@ -7,8 +7,9 @@ Single Page Application that predicts a user’s personality based on his/her tw
 
 
 ### How this works
+This app is built using Express & Node as the REST backend that handles HTTP calls from the front-end, built using Angular.
 <ol>
-  <li>This app is built using Express & Node as the REST backend that handles HTTP calls from the front-end, built using Angular.
+  <li>
 A user would provide a twitter screen name submits it via the angular front end. </li>
    <li>The angular application would then make a GET call to the "./personality" endpoint, passing in the provided twitter username as a parameter.
 </li>
