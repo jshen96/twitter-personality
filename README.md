@@ -23,8 +23,8 @@ You will need Node.js, NPM, and angular installed
 
 ### Installing
 
-run <code>npm start</code> in twitter directory
-run <code>ng serve --open</code> in who-are-you directory
+run <code>npm start</code> in <strong>twitter</strong> directory <br>
+run <code>ng serve --open</code> in <strong>who-are-you</strong> directory<br>
 
 ### Demo
 Type in an existing twitter screen name and see your personality visualized right in front of you! <br>
