@@ -21,7 +21,7 @@ A user would provide a twitter screen name submits it via the angular front end.
 
 You will need Node.js, NPM, and angular installed
 
-### Installing
+### Getting started
 
 run <code>npm start</code> in <strong>twitter</strong> directory <br>
 run <code>ng serve --open</code> in <strong>who-are-you</strong> directory<br>
@@ -33,10 +33,10 @@ Once loaded, lick on the tab to learn more about that category <br>
 <img src = "screenshot.png">
 
 ## Built With
-
-*node.js
-*npm
-*angular
-*Twit
-*IBM Watson
-
+<ul>
+  <li>node.js</li>
+  <li>npm</li>
+  <li>angular</li>
+  <li>Twit</li>
+  <li>IBM Watson</li>
+</ul>
